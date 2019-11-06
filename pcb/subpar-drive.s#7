@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -365,44 +366,49 @@
 <sheet>
 <description>Main aplication controller</description>
 <plain>
+<wire x1="0" y1="55.88" x2="48.26" y2="55.88" width="0.645159375" layer="97" style="longdash"/>
+<wire x1="48.26" y1="55.88" x2="48.26" y2="0" width="0.645159375" layer="97" style="longdash"/>
+<wire x1="48.26" y1="0" x2="0" y2="0" width="0.645159375" layer="97" style="longdash"/>
+<wire x1="0" y1="0" x2="0" y2="55.88" width="0.645159375" layer="97" style="longdash"/>
+<text x="2.54" y="53.34" size="1.778" layer="97">Debug connector</text>
 </plain>
 <instances>
-<instance part="TC1" gate="-1(VTARGET)" x="17.78" y="40.64" smashed="yes">
-<attribute name="NAME" x="20.32" y="39.878" size="1.524" layer="95"/>
-<attribute name="VALUE" x="17.018" y="42.037" size="1.524" layer="96"/>
+<instance part="TC1" gate="-1(VTARGET)" x="20.32" y="43.18" smashed="yes">
+<attribute name="NAME" x="22.86" y="42.418" size="1.524" layer="95"/>
+<attribute name="VALUE" x="19.558" y="44.577" size="1.524" layer="96"/>
 </instance>
-<instance part="TC1" gate="-2(TMS/SWDIO)" x="17.78" y="33.02" smashed="yes">
-<attribute name="NAME" x="20.32" y="32.258" size="1.524" layer="95"/>
+<instance part="TC1" gate="-2(TMS/SWDIO)" x="20.32" y="35.56" smashed="yes">
+<attribute name="NAME" x="22.86" y="34.798" size="1.524" layer="95"/>
 </instance>
-<instance part="TC1" gate="-3(GND)" x="17.78" y="12.7" smashed="yes">
-<attribute name="NAME" x="20.32" y="11.938" size="1.524" layer="95"/>
+<instance part="TC1" gate="-3(GND)" x="20.32" y="15.24" smashed="yes">
+<attribute name="NAME" x="22.86" y="14.478" size="1.524" layer="95"/>
 </instance>
-<instance part="TC1" gate="-4(TCK/SWCLK)" x="17.78" y="30.48" smashed="yes">
-<attribute name="NAME" x="20.32" y="29.718" size="1.524" layer="95"/>
+<instance part="TC1" gate="-4(TCK/SWCLK)" x="20.32" y="33.02" smashed="yes">
+<attribute name="NAME" x="22.86" y="32.258" size="1.524" layer="95"/>
 </instance>
-<instance part="TC1" gate="-5(GND/5V)" x="17.78" y="17.78" smashed="yes">
-<attribute name="NAME" x="20.32" y="17.018" size="1.524" layer="95"/>
+<instance part="TC1" gate="-5(GND/5V)" x="20.32" y="20.32" smashed="yes">
+<attribute name="NAME" x="22.86" y="19.558" size="1.524" layer="95"/>
 </instance>
-<instance part="TC1" gate="-6(TDO/SWO)" x="17.78" y="27.94" smashed="yes">
-<attribute name="NAME" x="20.32" y="27.178" size="1.524" layer="95"/>
+<instance part="TC1" gate="-6(TDO/SWO)" x="20.32" y="30.48" smashed="yes">
+<attribute name="NAME" x="22.86" y="29.718" size="1.524" layer="95"/>
 </instance>
-<instance part="TC1" gate="-7(RTCK)" x="17.78" y="20.32" smashed="yes">
-<attribute name="NAME" x="20.32" y="19.558" size="1.524" layer="95"/>
+<instance part="TC1" gate="-7(RTCK)" x="20.32" y="22.86" smashed="yes">
+<attribute name="NAME" x="22.86" y="22.098" size="1.524" layer="95"/>
 </instance>
-<instance part="TC1" gate="-8(TDI)" x="17.78" y="22.86" smashed="yes">
-<attribute name="NAME" x="20.32" y="22.098" size="1.524" layer="95"/>
+<instance part="TC1" gate="-8(TDI)" x="20.32" y="25.4" smashed="yes">
+<attribute name="NAME" x="22.86" y="24.638" size="1.524" layer="95"/>
 </instance>
-<instance part="TC1" gate="-9(TRST)" x="17.78" y="10.16" smashed="yes">
-<attribute name="NAME" x="20.32" y="9.398" size="1.524" layer="95"/>
+<instance part="TC1" gate="-9(TRST)" x="20.32" y="12.7" smashed="yes">
+<attribute name="NAME" x="22.86" y="11.938" size="1.524" layer="95"/>
 </instance>
-<instance part="TC1" gate="-10(!RESET!)" x="17.78" y="35.56" smashed="yes">
-<attribute name="NAME" x="20.32" y="34.798" size="1.524" layer="95"/>
+<instance part="TC1" gate="-10(!RESET!)" x="20.32" y="38.1" smashed="yes">
+<attribute name="NAME" x="22.86" y="37.338" size="1.524" layer="95"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="12.7" y="43.18" smashed="yes">
-<attribute name="VALUE" x="12.7" y="45.974" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY1" gate="G$1" x="15.24" y="45.72" smashed="yes">
+<attribute name="VALUE" x="15.24" y="48.514" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND1" gate="1" x="12.7" y="5.08" smashed="yes">
-<attribute name="VALUE" x="12.7" y="4.826" size="1.778" layer="96" align="top-center"/>
+<instance part="GND1" gate="1" x="15.24" y="7.62" smashed="yes">
+<attribute name="VALUE" x="15.24" y="7.366" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -411,45 +417,45 @@
 <net name="GND" class="0">
 <segment>
 <pinref part="TC1" gate="-9(TRST)" pin="S"/>
-<wire x1="15.24" y1="10.16" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="TC1" gate="-1(VTARGET)" pin="S"/>
-<wire x1="15.24" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
-<wire x1="12.7" y1="40.64" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="43.18" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!MCU-RST" class="0">
 <segment>
 <pinref part="TC1" gate="-10(!RESET!)" pin="S"/>
-<wire x1="15.24" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
-<label x="12.7" y="35.56" size="0.889" layer="95" rot="R180" xref="yes"/>
+<wire x1="17.78" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
+<label x="15.24" y="38.1" size="0.889" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
 <pinref part="TC1" gate="-2(TMS/SWDIO)" pin="S"/>
-<wire x1="15.24" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
-<label x="12.7" y="33.02" size="0.889" layer="95" rot="R180" xref="yes"/>
+<wire x1="17.78" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
+<label x="15.24" y="35.56" size="0.889" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWCLK" class="0">
 <segment>
 <pinref part="TC1" gate="-4(TCK/SWCLK)" pin="S"/>
-<wire x1="15.24" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
-<label x="12.7" y="30.48" size="0.889" layer="95" rot="R180" xref="yes"/>
+<wire x1="17.78" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<label x="15.24" y="33.02" size="0.889" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWO" class="0">
 <segment>
 <pinref part="TC1" gate="-6(TDO/SWO)" pin="S"/>
-<wire x1="15.24" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
-<label x="12.7" y="27.94" size="0.889" layer="95" rot="R180" xref="yes"/>
+<wire x1="17.78" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
+<label x="15.24" y="30.48" size="0.889" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

@@ -4979,12 +4979,27 @@ Package for LCSC connector C319148</description>
 <wire x1="190.5" y1="5.08" x2="5.08" y2="5.08" width="0.645159375" layer="97" style="longdash"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="134.62" width="0.645159375" layer="97" style="longdash"/>
 <text x="7.62" y="129.54" size="1.778" layer="97">FPGA power and ctrl</text>
-<text x="-19.812" y="111.76" size="0.889" layer="97">p107</text>
+<text x="26.162" y="83.058" size="0.889" layer="97">A14</text>
 <wire x1="5.08" y1="248.92" x2="83.82" y2="248.92" width="0.645159375" layer="97" style="longdash"/>
 <wire x1="83.82" y1="248.92" x2="83.82" y2="137.16" width="0.645159375" layer="97" style="longdash"/>
 <wire x1="83.82" y1="137.16" x2="5.08" y2="137.16" width="0.645159375" layer="97" style="longdash"/>
 <wire x1="5.08" y1="137.16" x2="5.08" y2="248.92" width="0.645159375" layer="97" style="longdash"/>
 <text x="7.62" y="243.84" size="1.778" layer="97">Debug connector</text>
+<text x="31.242" y="77.978" size="0.889" layer="97">F10</text>
+<text x="36.322" y="83.058" size="0.889" layer="97">F6</text>
+<text x="41.402" y="77.978" size="0.889" layer="97">K10</text>
+<text x="46.482" y="83.058" size="0.889" layer="97">K6</text>
+<text x="51.562" y="77.978" size="0.889" layer="97">L2</text>
+<text x="26.162" y="47.498" size="0.889" layer="97">N13</text>
+<text x="31.242" y="42.418" size="0.889" layer="97">A3</text>
+<text x="36.322" y="47.498" size="0.889" layer="97">F8</text>
+<text x="41.402" y="42.418" size="0.889" layer="97">H10</text>
+<text x="46.482" y="47.498" size="0.889" layer="97">N15</text>
+<text x="51.562" y="42.418" size="0.889" layer="97">P3</text>
+<text x="61.722" y="47.498" size="0.889" layer="97">R8</text>
+<text x="66.802" y="42.418" size="0.889" layer="97">E1</text>
+<text x="71.882" y="47.498" size="0.889" layer="97">J6</text>
+<text x="43.942" y="83.058" size="0.889" layer="97">A14</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
